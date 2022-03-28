@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("build docker image") {
       steps {
-        sh docker build -t nagendramani/webapp:1.0
+        sh docker build -t nagendramani/webapp:1.0 .
       }
     }
     stage ("push to repo"){
